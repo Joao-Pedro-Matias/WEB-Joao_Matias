@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folha de Papel</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Cinza claro para simular uma mesa */
+            background-color: #f0f0f0;
+            /* Cinza claro para simular uma mesa */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,19 +20,46 @@
             text-align: center;
             width: 600px;
             height: 800px;
-            background-color: white; /* Fundo branco como papel */
-            border: 1px solid #ccc; /* Borda fina para imitar uma folha */
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+            background-color: white;            /* Fundo branco como papel */
+            border: 1px solid #ccc;            /* Borda fina para imitar uma folha */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);            /* Sombra para dar profundidade */
             padding: 20px;
+            margin-top: 200px;
+        }
+
+        .caixa {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+
+
+        .container {
+            display: flex;
+            align-items: center;            /* Alinha a imagem e o texto verticalmente */
+        }
+
+        .imagem {
+            width: 20px;
+            height: auto;
+            margin-right: 0px;            /* Espaço entre a imagem e o texto */
         }
     </style>
 </head>
+
 <body>
 
     <div class="folha">
         <h1> JOÃO PEDRO AMERICO MATIAS </h2>
-        <p>Aqui está um exemplo de como deixar o fundo parecido com uma folha de papel.</p>
+            <div class="container">
+                <img src="/WEB-Joao_Matias/Html/Imagens/email_icon.png" alt="Imagem" class="imagem">
+                <p>Texto fixo ao lado da imagem.</p>
+            </div>
+
     </div>
 
 </body>
+
 </html>
