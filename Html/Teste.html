@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folha de Papel</title>
     <style>
+        
+            .container {
+                width: 100%;
+                flex-direction: column;
+            }
         body {
             background-color: #f0f0f0;
             /* Cinza claro para simular uma mesa */
@@ -34,32 +39,49 @@
             background-color: lightgray;
         }
 
-
-
-        .container {
-            display: flex;
-            align-items: center;            /* Alinha a imagem e o texto verticalmente */
-        }
-
         .imagem {
             width: 20px;
             height: auto;
             margin-right: 0px;            /* Espaço entre a imagem e o texto */
+        }
+            .informartion_image {
+            width: 20px;
+            height: auto;
+            margin-right: -200px;
+
+        }
+        .information_text {
+            font-size: 14px;
+            line-height: 1.4;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1px;
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+
+
         }
     </style>
 </head>
 
 <body>
 
-    <div class="folha">
-        <h1> JOÃO PEDRO AMERICO MATIAS </h2>
-            <div class="container">
-                <img src="/WEB-Joao_Matias/Html/Imagens/email_icon.png" alt="Imagem" class="imagem">
-                <p>Texto fixo ao lado da imagem.</p>
+    <div class="conatiner">
+        <div class="folha">
+            <h1> JOÃO PEDRO AMERICO MATIAS </h1>
+            <h3> INFORMAÇÕES PESSOAIS</h3>
+            <div class="information_text">
+                <img src="/Html/Imagens/aniversario_icon.png" class="informartion_image" style="margin-left: -25px;">
+                <span style="margin-left:-65px;" >06 / 06/ 2007</span>
+                <img src="./Imagens/email_icon.png" class="informartion_image" style="margin-right:-265px;">
+                <span style="margin-right: 30px;">joaopedromatias2007@gmail.com</span>
+                  
             </div>
-
+            <h4> Teste !!</h4>    
+        </div>
     </div>
-
 </body>
 
 </html>
