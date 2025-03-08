@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença entre border-collapse: collapse e separate</title>
+    <style>
+        /* Estilos gerais para as tabelas */
+        table {
+            width: 300px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Tabela com border-collapse: collapse */
+        .tabela-collapse {
+            border-collapse: collapse;
+        }
+
+        /* Tabela com border-collapse: separate */
+        .tabela-separate {
+            border-collapse: separate;
+            border-spacing: 10px; /* Espaçamento entre as células */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>border-collapse: collapse</h2>
+    <table class="tabela-collapse">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <h2>border-collapse: separate</h2>
+    <table class="tabela-separate">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+</body>
+</html>
