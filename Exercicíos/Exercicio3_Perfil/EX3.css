@@ -83,4 +83,46 @@ h4 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
   }
+
+
+  @media (max-width: 768px) {
+    /* Ajusta o card para ser mais largo em telas pequenas */
+   body {
+    background-color: #1F1F1F;
+   }
+   
+    card {
+        width: 80%;
+        margin: 50px auto; /* Menor margem superior */
+        padding: 10px;
+    }.
+
+    /* Reduz o tamanho da imagem para se ajustar melhor em telas pequenas */
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Ajusta o tamanho da fonte para h3 e h4 */
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    /* Ajusta o tamanho da fonte da descrição */
+    .normal_text {
+        font-size: 14px;
+    }
+
+    /* Ajusta as opções (botões) para o tamanho da tela */
+    .options {
+        width: 90%; /* Largura maior para aproveitar o espaço */
+        padding: 15px;
+        font-size: 16px; /* Reduz o tamanho da fonte nos botões */
+    }
+}
