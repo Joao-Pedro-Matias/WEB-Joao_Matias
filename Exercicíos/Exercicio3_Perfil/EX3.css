@@ -93,11 +93,11 @@ h4 {
     background-color: #1F1F1F;
    }
    
-    card {
+    .card {
         width: 80%;
         margin: 50px auto; /* Menor margem superior */
         padding: 10px;
-    }.
+    }
 
     /* Reduz o tamanho da imagem para se ajustar melhor em telas pequenas */
     .image {
