@@ -1,0 +1,65 @@
+body {
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(/Exercicíos/Exercicio4_FAQs/Images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    
+}
+
+.card {
+    padding: 1%;
+    width: 500px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 10px #0000001a;
+    border-radius: 15px;
+    margin: 120px auto;
+}
+
+hr {
+    opacity: 15%;
+    background-color: hsl(292, 16%, 49%);
+    margin: 20px 20px auto 20px; 
+
+}
+
+h1 {
+    font-size: 40px;
+    color:hsl(292, 42%, 14%);
+    margin: 10px 20px 10px 20px;
+
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+h3 {
+    font-size: 16px;
+    color:hsl(292, 42%, 14%);
+    margin: 10px 20px 10px 20px;
+
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.normal_text {
+    font-size: 16px;
+    color:hsl(292, 16%, 49%);
+    margin: 10px 20px 10px 20px;
+    
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.work-sans{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
