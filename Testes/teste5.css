@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Contêiner principal - Padrão ROW */
+.container2 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 800px;
+    gap: 2px;
+}
+
+/* Estilos dos elementos */
+.box2 {
+    background-color: #5DE05D;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Definir ordem padrão para ROW */
+.child1 { width: 25%; height: 150px; order: 1; }
+.child2 { width: 50%; height: 150px; order: 2; }
+.child3 { width: 25%; height: 150px; order: 3; }
+
+/* Layout RESPONSIVO - Mudar ordem e posição no modo COLUMN */
+@media (max-width: 600px) {
+    .container2 {
+        flex-direction: column; /* Empilhar os elementos */
+        align-items: center;
+    }
+
+    .child2 {
+        width: 100%; /* Agora ocupa toda a largura */
+        height: 200px;
+        order: 1; /* Child 2 sobe */
+    }
+
+    .child1 {
+        width: 50%;
+        height: 150px;
+        order: 2;
+    }
+
+    .child3 {
+        width: 50%;
+        height: 150px;
+        order: 3;
+    }
+}

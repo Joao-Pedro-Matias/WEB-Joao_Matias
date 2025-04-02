@@ -52,6 +52,7 @@ body {
     padding: 0%;
     height: 300px;
     background-color: #5DE05D;
+    display: flex;
 }
 
 .box2:nth-child(1) {
@@ -79,12 +80,20 @@ body {
     
     .box:nth-child(2) {
         width: 100%;
+        
+    }
+
+    .container2 {
         display: flex;
         flex-direction: column;
+        gap: 2px;
+         
     }
 
     .box2:nth-child(1) {
         width: 50%;
+        display: flex;
+        flex-direction: row;
     }
     
     .box2:nth-child(2) {
@@ -95,6 +104,8 @@ body {
     
     .box2:nth-child(3) {
         width: 50%;
+        display: flex;
+        flex-direction: row;
     }
 
   
