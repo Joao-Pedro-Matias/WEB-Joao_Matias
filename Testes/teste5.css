@@ -42,8 +42,9 @@ body {
 /* Layout RESPONSIVO - Mudar ordem e posição no modo COLUMN */
 @media (max-width: 600px) {
     .container2 {
-        flex-direction: column; /* Empilhar os elementos */
+        flex-direction: row; /* Empilhar os elementos */
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .child2 {
@@ -53,14 +54,16 @@ body {
     }
 
     .child1 {
-        width: 50%;
+        width: 40%;
         height: 150px;
         order: 2;
+        
     }
 
     .child3 {
-        width: 50%;
+        width: 40%;
         height: 150px;
         order: 3;
+        box-sizing: border-box;
     }
 }
