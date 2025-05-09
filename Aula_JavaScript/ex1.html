@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Média de 3 números</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Verificar média</h1>
+
+    <ul>
+        <input type="number" id="score1" placeholder="Digite a primeira nota" />
+        <input type="number" id="score2" placeholder="Digite a sgunda nota" />
+        <input type="number" id="score3" placeholder="Digite a terceira nota" />
+        <button onclick="verificar()">Verificar</button>
+    </ul>
+
+
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            const sc1 = parseInt(document.getElementById("score1").value);
+            const sc2 = parseInt(document.getElementById("score2").value);
+            const sc3 = parseInt(document.getElementById("score3").value);
+
+            const resultado = document.getElementById("resultado");
+
+            if (isNaN(sc1) || isNaN(sc2) || isNaN(sc3)) {
+                resultado.textContent = "Por favor, digite um número válido.";
+                return;
+            }
+
+            mean = (sc1+sc2+sc3) / 3;
+
+            if (mean >= 6) {
+                resultado.textContent = `Sua média é ${mean} e você foi aprovado!`;
+            } else {
+                resultado.textContent = `Sua média é ${mean} e você foi reprovado :(`;
+            }
+
+            if (mean === 0) alert('Você é gay?');
+        }
+    </script>
+
+</body>
+
+</html>

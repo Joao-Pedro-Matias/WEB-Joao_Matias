@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contagem até N</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .container {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contar até N</h1>
+  <input type="number" id="numero" placeholder="Digite um número" />
+  <button onclick="verificar()">Contar</button>
+
+  <div id="resultado" class="container"></div>
+
+  <script>
+    function verificar() {
+      const num = parseInt(document.getElementById("numero").value);
+      const resultado = document.getElementById("resultado");
+
+      if (isNaN(num)) {
+        resultado.textContent = "Por favor, digite um número válido.";
+        return;
+      } 
+
+      for (let i=0; i<=num; i++){
+        resultado.textContent += `${i}, `;
+      }
+    }
+  </script>
+
+</body>
+</html>
+
