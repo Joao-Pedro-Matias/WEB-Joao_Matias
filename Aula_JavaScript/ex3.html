@@ -35,6 +35,7 @@
 
   <script>
     function verificar() {
+      document.getElementById("resultado").textContent = "";
       const num = parseInt(document.getElementById("numero").value);
       const resultado = document.getElementById("resultado");
 
@@ -44,7 +45,8 @@
       } 
 
       for (let i=0; i<=num; i++){
-        resultado.textContent += `${i}, `;
+        if(i<num) resultado.textContent += `${i}, `;
+        else resultado.textContent += `${i} `;
       }
     }
   </script>
