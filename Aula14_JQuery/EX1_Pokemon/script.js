@@ -15,10 +15,13 @@ for (let i=1; i<= 10; i++) {
                         <td>${response.types[1] ? response.types[1].type.name: "-"}</td>                               
                     
                         </tr>
-                
+
             
         `;
 
     }
     );
 }
+
+        
+
