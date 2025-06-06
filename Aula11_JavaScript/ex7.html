@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EX6 Maior número</title>
+    <title>EX7 Número Primo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
@@ -12,7 +12,7 @@
 
 <body style="background-color: beige;">
     <div class="container-sm mt-5 text-center">
-        <h1><b>Maior número da lista</b></h1>
+        <h1><b>Verificar se um número é primo</b></h1>
     </div>
 
     <div class="container-sm mt-1" style="max-width:300px">
@@ -21,7 +21,6 @@
             <div class="input-group input-group-sm mb-3">
                 <input type="number" class="form-control" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-xxl" id="number" placeholder="Lista">
-                <button type="button" class="btn btn-secondary" onclick="send()">Enviar</button>
                 <button type="button" class="btn btn-secondary" onclick="verify()">Verificar</button>
 
 
@@ -38,29 +37,29 @@
 
     <script>
 
-        let i = 0;
+        let n, aux = 0;
         let numbers = [];
 
-        function send() {
-
-            if (i === 0) result.textContent = "";
-
-            const num = parseInt(document.getElementById("number").value);            
-
-                numbers.push(num);
-
-                result.textContent += ` ${numbers[i]}, `;
-                i++;
-        }
-
         function verify() {
-            if (numbers.length === 0) result.textContent = `Nenhum número enviado`;
-            else {
-                result.textContent = `Maior número: ${Math.max(...numbers)}`;
-                i=0;
-                numbers = [];
+            const num = parseInt(document.getElementById("number").value);
 
-            } 
+            n = num;
+
+            if ((n % 2) == 0) n /= 2;
+            else n = n / 2 - .5;
+
+            for (let i = n; i >= 2; i--) {
+                if ((num % i) == 0) {
+                    aux = 1;
+                    numbers.push(i);
+                }
+            }
+
+            if (aux == 0) result.textContent = "Número primo";
+            else result.textContent = `Número não primo, divisível por: ${numbers}`;
+
+            numbers = [];
+            aux = 0;
         }
     </script>
 </body>
